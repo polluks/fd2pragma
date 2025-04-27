@@ -90,7 +90,7 @@ This is a utility to create:
   - OS4 XML files
   - OS4 cross-call code stubs
 
-Therefor only the FD file giving the library information is needed. For
+Therefore only the FD file giving the library information is needed. For
 some SPECIAL options you may additionally supply the CLIB keyword (or you
 need to supply it) giving fd2pragma the prototypes file in clib directory.
 Better is to supply the all-in-one SFD format as input.
@@ -479,7 +479,7 @@ SPECIAL option:
  21: Same as 20, but with another name.
  22: Same as 20, but there are no XDEF statements in the resulting file.
  23: Same as 22, but with another name.
- 24: Creates lvo defintion file as link library (like in amiga.lib)
+ 24: Creates lvo definition file as link library (like in amiga.lib)
 
 (proto files - no prototypes)
  30,31,32,33,34: Creates proto files for the C compiler (the difference is
@@ -569,8 +569,8 @@ overwrite real pragmas or inlines.
 (PPC assembler LVO files)
 100: Creates lvo file for an PPC assembler.
 101: Same as 101, but there are no XDEF statements in the resulting file.
-102: Creates lvo defintion file as ELF link library.
-103: Creates lvo defintion file as EHF link library.
+102: Creates lvo definition file as ELF link library.
+103: Creates lvo definition file as EHF link library.
 104: Same as 20, but names without '_'.
 105: Same as 21, but names without '_'.
 106: Same as 22, but names without '_'.
@@ -856,7 +856,7 @@ List of used names:
 List of used single-file names:
 *******************************
 
-The xxx in these files is the funtion name.
+The xxx in these files is the function name.
 
 "xxx.s"          stub function as Assembler text (68K, PPC)
  SPECIAL 90-93
@@ -1305,7 +1305,7 @@ stub, stub function:
 
 tag-functions:
  C allows functions to get a variable number of parameters
- everytime they are called. These varargs functions have in their
+ every time they are called. These varargs functions have in their
  prototypes "..." at the end (e.g. printf). Amiga system libraries use this
  mechanism for supplying so-called tags. (See Amiga programmers
  documentation for that.)
@@ -1581,7 +1581,7 @@ Now some commands which may be used in whole file:
             
 ==varargs   This introduces an varargs alias name. The following function
             definition keeps the bias of the previous one.
-            There are mainly 2 types of varargs funtions:
+            There are mainly 2 types of varargs functions:
             1) Using  one instance of the varargs parameter followed by ...
                struct Menu *CreateMenusA(struct NewMenu *newmenu,
                  struct TagItem *taglist) (A0,A1)
@@ -1669,7 +1669,7 @@ definition. A function definition consists of three parts:
 <return/function>(<parameters>)(<registers>)
 
 All three parts must be present. They may cross lines. A particular function
-definition is terminated by the second close paranthesis. A function
+definition is terminated by the second close parenthesis. A function
 definition must start on a fresh line.
  
 Examples:
@@ -1712,7 +1712,7 @@ ULONG tag1Type, ...) (A0,A1)
 @node XMLDesign "Design description of XML-IDL files"
 The XML-IDL fileformat holds all the information needed to create developer
 files for OS4 library programming. It is a standard XML file. The XML syntax
-descriptions are not subject of this text, so the necessary decriptions
+descriptions are not subject of this text, so the necessary descriptions
 cover only a minimum.
 
 The general file layout can be seen in following example:
@@ -1798,7 +1798,7 @@ Description of Elements and their parameters and sub elements:
 @endnode
 
 @remark ********************************************************************
-@node DTD "Document Type definition fo XML-IDL"
+@node DTD "Document Type definition for XML-IDL"
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!ELEMENT library (include*, interface+)>
 <!ATTLIST library
