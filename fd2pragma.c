@@ -1,6 +1,6 @@
 /* $Id$ */
 static const char version[] =
-"$VER: fd2pragma 2.197 (09.10.2016) by Dirk Stoecker <software@dstoecker.de>";
+"$VER: fd2pragma 2.198 (27.04.2025) by Dirk Stoecker <software@dstoecker.de>";
 
 /* There are four defines, which alter the result which is produced after
    compiling this piece of code. */
